@@ -1,0 +1,4 @@
+ckfinder
+node_modules
+.env
+!/src/**

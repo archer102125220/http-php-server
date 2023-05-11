@@ -1,0 +1,10 @@
+{
+  "name": "http-php-server",
+  "scripts": {
+    "start": "node php-server.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "php-server": "^1.0.0"
+  }
+}
