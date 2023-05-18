@@ -15,5 +15,5 @@ const server = await phpServer({
   open: true,
 });
 console.log(`PHP server running at :
- http://localhost:8080
+ http://localhost:${process.env.PORT}
  ${server.url}`);

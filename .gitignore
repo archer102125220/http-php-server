@@ -1,4 +1,7 @@
-ckfinder
-node_modules
-.env
-!/src/**
+*
+!.env.example
+!package.json
+!yarn.lock
+!src/index.php
+!src/ckfinder
+!src/ckfinder/**
