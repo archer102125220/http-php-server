@@ -4,6 +4,7 @@
     "start": "node php-server.mjs"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "php-server": "^1.0.0"
   }
