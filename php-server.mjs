@@ -7,7 +7,7 @@ dotenv.config();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const server = await phpServer({
-  base: path.join(__dirname, "src"),
+  base: process.env.BASE_DIR || path.join(__dirname, "src"),
   // hostname: "localhost",
   hostname: process.env.HOST_NAME || "0.0.0.0",
   port: process.env.PORT || 8080,
@@ -15,5 +15,5 @@ const server = await phpServer({
   open: true,
 });
 console.log(`PHP server running at :
- http://localhost:${process.env.PORT}
+ http://localhost:${process.env.PORT || 8080}
  ${server.url}`);
