@@ -3,7 +3,8 @@
   "scripts": {
     "start": "node php-server.mjs",
     "start-laravel": "cross-env BASE_DIR=src/laravel/public yarn start",
-    "prepare": "cd src/laravel && composer install"
+    "laravel-dependencies": "cd src/laravel && composer install",
+    "prepare": "yarn laravel-dependencies"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
