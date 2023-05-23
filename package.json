@@ -2,8 +2,10 @@
   "name": "http-php-server",
   "scripts": {
     "start": "node php-server.mjs",
+    "vue-dev": "cd src/laravel && yarn dev",
     "start-laravel": "cross-env BASE_DIR=src/laravel/public yarn start",
-    "laravel-dependencies": "cd src/laravel && composer install",
+    "laravel-npm-install": "cd src/laravel && yarn install",
+    "laravel-dependencies": "cd src/laravel && composer install && yarn install",
     "prepare": "yarn laravel-dependencies"
   },
   "dependencies": {
