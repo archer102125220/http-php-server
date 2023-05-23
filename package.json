@@ -1,7 +1,9 @@
 {
   "name": "http-php-server",
   "scripts": {
-    "start": "node php-server.mjs"
+    "start": "node php-server.mjs",
+    "start-laravel": "cross-env BASE_DIR=src/laravel/public yarn start",
+    "prepare": "cd src/laravel && composer install"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
