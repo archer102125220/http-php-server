@@ -15,15 +15,18 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+import OptionsExampleComponent from './components/OptionsExampleComponent.vue';
+import CompositionExampleComponent from './components/CompositionExampleComponent.vue';
+app.component('options-example-component', OptionsExampleComponent);
+app.component('composition-example-component', CompositionExampleComponent);
 
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
  * components and automatically register them with their "basename".
  *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ * Eg. ./components/OptionsExampleComponent.vue -> <options-example-component></options-example-component>
+ * Eg. ./components/CompositionExampleComponent.vue -> <composition-example-component></composition-example-component>
  */
 
 // Object.entries(import.meta.glob('./**/*.vue', { eager: true })).forEach(([path, definition]) => {
